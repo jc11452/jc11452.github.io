@@ -1,0 +1,23 @@
+<!--globalstyles-->
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+h1{
+
+}
+
+
+<!-- Homepage -->
+.container1{
+  background-color: #c9b7f4;
+  height: 1080px;
+  width: 1920px;
+}
+.navigation-links{
+
+}
