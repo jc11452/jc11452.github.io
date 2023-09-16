@@ -7,10 +7,8 @@ h1{
 
 
 <!-- Homepage -->
-.container1{
+.homepage{
   background-color: #fff7e9;
-  height: 1080px;
-  width: 1920px;
 }
 .btn{
   font: 20px "gal-gothic-variable", sans-serif;
