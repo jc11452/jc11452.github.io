@@ -21,13 +21,13 @@ h1{
   width: 1920px;
 }
 .btn{
-  font-family: "gal-gothic-variable", sans-serif;
+  font: 20px "gal-gothic-variable", sans-serif;
   font-variation-settings: "wght" 300;
   color: #000000;
   background: #ee3a1e;
   text-decoration: none;
   padding: 8px;
-  margin: 2px;
+  margin: 5px;
   border-radius: 7px;
   display: inline-block;
 }
