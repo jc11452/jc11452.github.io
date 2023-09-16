@@ -1,6 +1,6 @@
 <!--globalstyles-->
 h1{
-  padding: 60px;
+  padding-left: 60px;
   font: 80px "forma-djr-banner", sans-serif;
   color: #ee3a1e;
 }
@@ -17,7 +17,7 @@ h1{
   background: #ee3a1e;
   text-decoration: none;
   padding: 8px;
-  margin: 8px;
+  margin: 10px;
   border-radius: 7px;
   display: inline-block;
 }
