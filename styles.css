@@ -1,12 +1,4 @@
 <!--globalstyles-->
-
-html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
 h1{
   padding: 60px;
   font: 80px "forma-djr-banner", sans-serif;
