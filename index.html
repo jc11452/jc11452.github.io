@@ -5,66 +5,75 @@
   <head>
     <meta charset="utf-8">
     <title>The Journey of Toast</title>
-    <link rel="stylesheet" href="/styles.css"> <!--cssfile-->
+    <link rel="stylesheet" href="styles.css"> <!--cssfile-->
     <link rel="stylesheet" href="https://use.typekit.net/mix7vbv.css"> <!--fonts-->
+    <link rel="stylesheet" href="https://use.typekit.net/mix7vbv.css">
     <link rel="stylesheet" href="https://use.typekit.net/mix7vbv.css">
   </head>
 
   <body>
-    <main>
-<!--1. webpage: homepage-->
+<!-- homepage --------------------------------------------------------------------------------------------------------->
     <section class="homepage">
-      <h1 id="homepage">TOAST'S JOURNEY</h1> <!--header-->
-      <div class="navigation-links"> <!--navigationlinks-->
-      <nav>
-        <a class="btn" href="#homepage">Homepage</a>
-        <a class="btn" href="#">Contributors</a>
-        <a class="btn" href="#">About</a>
-      </nav>
+      <h1 id="homepage">TOAST'S JOURNEY</h1> <!--Header title-->
+      <div id="navBar"> <!--Navigation button container-->
+        <nav>
+          <a class="btn" href="#homepage">Homepage</a> <!--Button#1-->
+          <a class="btn" href="#image_carousel">Contributors</a> <!--Button#2-->
+        </nav>
+      </div>
+      <p class="synopsis">In a world where the ordinary can become extraordinary, unassuming Toast emerges with newfound consciousness.
+         He is thrusted into a thrilling adventure, forced to navigate the vast realms of supposed inanimate objects. But he makes an
+         unexpected encounter with the notorious "paper clamp family". Anticipating full danger, Toast braces himself however what happens
+         next stumps Toast into further disbelief...</p>
+      <div class="img-container"> <!--Image container for computer-->
+        <a href="#video"><img class="start-image" src="start.png"></a> <!--Original image of comp-->
+        <a href="#video"><img class="hover-image" src="hover.png"></a> <!--Changed image of comp (on hover)-->
+      </div>
+      <div class="mar_container"> <!--Container for looped text animation-->
+        <div class="marquee">
+          <div class="mar_content">TOAST'S JOURNEY INTO AN EXTRAORDINARY WORLD TOAST'S JOURNEY INTO AN EXTRAORDINARY WORLD TOAST'S JOURNEY INTO AN EXTRAORDINARY WORLD TOAST'S JOURNEY INTO AN EXTRAORDINARY WORLD
+          </div>
+        </div>
+      </div>
+      <img class="bg_croc" src="croc.png"> <!--Bg image (crocodiles)-->
+    </section>
+
+<!-- videopage --------------------------------------------------------------------------------------------------------->
+    <section class="videopage">
+      <iframe id="video" src="https://www.youtube.com/embed/_TJFZRTkHrg?si=zfrJbTOHbgHIhGMQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+<!-- actorspage --------------------------------------------------------------------------------------------------------->
+    <section class="actorspage">
+      <div id="image_carousel"> <!--Container for vertically scrollable actors' section-->
+        <h1 class="img_title1">TOAST <!-- name -->
+          <br> TOAST
+          <br> TOAST</h1>
+          <img id="toast" src="toast.png"> <!-- image -->
+        <h1 class="img_title2">PAPER CLAMP FAMILY</h1> <!-- name -->
+          <img id="paper_clamp_family" src="paper_clamp.png"> <!-- image -->
+        <h1 class="img_title3">NAIJAH SIMON</h1> <!-- name -->
+          <img id="phone_hand" src="hand_phone.png"> <!-- image -->
+        <h1 class="img_title4">JIHO CHOI</h2> <!-- name -->
+          <img id="my_hand" src="my_hand.png"> <!-- image -->
       </div>
 
 
 
-
-
-
-
-
     </section>
-  </body>
+    <script>
+      function setButtonColor() {
+        const buttons = document.querySelectorAll(".btn");
+        const videopage = document.querySelector(".videopage");
+        const videopageBackgroundColor = getComputedStyle(videopage).backgroundColor;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </main>
+        for (const button of buttons) {
+          if (videopageBackgroundColor.includes("238, 58, 30")) {
+            button.style.backgroundColor = "#ff8a78"; // Change button background color to #ff8a78
+          } else {
+            button.style.backgroundColor = "#ee3a1e"; // Reset button background color
+          }
+        }
+      }
+      setButtonColor();
+    </script>
   </body>
