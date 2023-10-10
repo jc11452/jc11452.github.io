@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+/* text decoration */
+p {
+  color: #FFFFFF;
+}
+
+.text_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  width: 100%;
+  background-color: #000000;
+}
+
+.image {
+  height: 850px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70%; /* Adjust this property as needed */
+}
+
+#image_1 {
+  background-image: url("unrequited_love.jpg");
+}
+
+#image_2 {
+  background-image: url("broken_hearted.jpg");
+}
+
+#image_3 {
+  background-image: url("time.jpg");
+}
+
+#image_4 {
+  background-image: url("confident_famous.jpg");
+}
