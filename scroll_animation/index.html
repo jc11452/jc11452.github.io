@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en-us" dir="ltr">
+
+<head> <!-- webpage metadata -->
+  <meta charset="utf-8">
+  <title>Scroll Animation</title>
+  <link rel="stylesheet" href="styles.css"> <!-- insert css file -->
+</head>
+
+  <body>
+<!-- sections of webpage
+
+    1) image#1 - unrequited_love
+    2) text section
+    3) image#2 - broken_hearted
+    4) text section
+    5) image#3 - clock
+    6) text <section>
+    7) image#4 - confident_famous -->
+
+<!-- first section - unrequited love -->
+    <div class="image" id="image_1"> </div>
+    <div class="text_section">
+      <p>A love that can never be...</p>
+    </div>
+
+<!-- second section - broken hearted -->
+    <div class="image" id="image_2"> </div>
+    <div class="text_section">
+      <p>Her heart ripped into a million shreds</p>
+    </div>
+
+<!-- third section - clock -->
+    <div class="image" id="image_3"> </div>
+    <div class="text_section">
+      <p>But with time her sadness faded away</p>
+    </div>
+
+
+<!-- last section - confident famous -->
+    <div class="image" id="image_4"> </div>
+    <div class="text_section">
+      <p> And she was birthed anew, stronger than ever.</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script>
+        $(document).ready(function() {
+          // Get the height of each text section
+          const textSectionHeight = $('.text_section').outerHeight();
+          // Listen for the scroll event
+          $(window).on('scroll', function() {
+            // Calculate the scroll position
+            const scrollTop = $(window).scrollTop();
+            // Apply parallax effect to each image individually
+            $('.image').each(function() {
+              const yPos = -(scrollTop - $(this).offset().top) / 6;
+              $(this).css('background-position', 'center ' + yPos + 'px');
+            });
+          });
+        });
+      </script>
+    </script>
+  </body>
