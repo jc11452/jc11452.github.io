@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Comic</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="logo">
+            <img src="./img/logo.png" alt="logo">
+        </div>
+        <div id="title">
+            what changes
+        </div>
+        <div id="desc">
+            A time-looping webcomic
+        </div>
+        <div id="arrow">
+            <svg id="arrow-svg" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-down"><polyline points="7 13 12 18 17 13"></polyline><polyline points="7 6 12 11 17 6"></polyline></svg>
+        </div>
+    </div>
+
+
+    <div class="story-container">
+        <h1 id="loopText">You feel a sense of deja-vu...</h1>
+        <div class="story" id="storyText">
+            <p>This is the beginning of your time travel adventure...</p>
+        </div>
+        
+        <div class="panel" id="panelSpace">
+            <img src="">
+        </div>
+        <div class="options">
+            <button id="option1" onclick="updateStory(1)">Option 1</button>
+            <button id="option2" onclick="updateStory(2)">Option 2</button>
+        </div>
+    </div>
+    <div id="wrap">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+
+body,
+html {
+    margin: 0;
+    background-color: black;
+    font-family: 'Cinzel', cursive;
+    /* Choose a subtle but creepy font */
+}
+
+#wrapper {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#logo {
+    height: 90%;
+}
+
+#logo>img {
+    height: 100%;
+    width: 100%;
+}
+
+#title {
+    color: white;
+    font-size: 56px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#desc {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% + 75px));
+}
+
+#arrow>svg {
+    animation: arrowAnim 1s ease infinite;
+}
+
+#wrap {
+    height: 80vh;
+    background-color: black;
+}
+
+.story-container {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+}
+
+.story-container img {
+    width: 50vw;
+}
+
+@keyframes arrowAnim {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+.options button {
+    background-color: #1c1c1c;
+    /* Dark background color */
+    color: white;
+    border: 2px solid #ff6347;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: 'Cinzel',cursive;
+    margin: 20px;
+} 
+  .options button:hover {
+    background-color: #ff6347; /* Red background color on hover */
+    color: #1c1c1c; /* Dark text color on hover */
+  }
+
+  #loopText{
+    display: none;
+  }
+  #imgSpecial{
+    display: flex;
+    justify-content: center;
+  }
+  #imgSpecial img{
+    border: 6px solid #ffffff;
+    margin: 0px 10px;
+    
+  }
+  #imgGun:hover{
+    filter: blur(1px);
+    cursor:pointer;
+  }
