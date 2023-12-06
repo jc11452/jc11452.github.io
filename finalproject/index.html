@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en-us" dir="ltr">
+
+<!--document head - web metadata-->
+  <head>
+    <meta charset="utf-8">
+    <title>Jiho Choi</title>
+    <link rel="stylesheet" href="style.css"> <!--cssfile-->
+    <link rel="stylesheet" href="https://use.typekit.net/mix7vbv.css">
+    <script src="shine.js-master/dist/shine.min.js"></script>
+    <!-- morphing layout to fit diff-sized screens -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+<body>
+  <!-- buttons -->
+  <a href="" class="button_container1">
+    <div class="butt_sec1"></div>
+    <div class="butt_sec1"></div>
+    <div class="butt_sec1"></div>
+    <div class="butt_sec1"></div>
+    <div class="butt_sec1"></div>
+    <div class="butt_sec1"></div>
+    <div class="button_text1">website projects</div>
+  </a>
+  <a href="" class="button_container2">
+    <div class="butt_sec2"></div>
+    <div class="butt_sec2"></div>
+    <div class="butt_sec2"></div>
+    <div class="butt_sec2"></div>
+    <div class="button_text2">about me</div>
+  </a>
+
+  <img class="crystal" src="images/crystal_hand.png">
+
+<!-- title-->
+  <h1 id="shinejs">jiho choi</h1>
+
+<!-- rotating tarot cards-->
+  <div class="cards">
+    <img src="images/front1.png">
+    <img src="images/front2.png">
+    <img src="images/front3.png">
+    <img src="images/front4.png">
+    <img src="images/back1.png">
+    <img src="images/front1.png">
+    <img src="images/front2.png">
+    <img src="images/front3.png">
+    <img src="images/front4.png">
+    <img src="images/back1.png">
+  </div>
+
+
+<!-- javascript -->
+<!-- shining text javascript -->
+  <script type="text/javascript">
+    var config = new shinejs.Config({
+      numSteps: 6,
+      opacity: 0.25,
+      shadowRGB: new shinejs.Color(94, 75, 128)
+    });
+    var shine = new shinejs.Shine(document.getElementById('shinejs'), config);
+
+    function handleMouseMove(event) {
+      shine.light.position.x = event.clientX;
+      shine.light.position.y = event.clientY;
+      shine.draw();
+    }
+    window.addEventListener('mousemove', handleMouseMove, false);
+  </script>
+
+  <!-- rotating cards javascript -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const cardsContainer = document.querySelector(".cards");
+      const cardImages = cardsContainer.querySelectorAll("img");
+
+      let angle = 0;
+      const rotateSpeed = 0.2;
+
+      function rotateCards() {
+        angle += rotateSpeed;
+
+        cardImages.forEach((img, index) => {
+          const rotation = angle + (index * (360 / cardImages.length));
+          img.style.transform = `rotate(${rotation}deg) translate(270px)`;
+        });
+        requestAnimationFrame(rotateCards);
+      }
+      rotateCards();
+    });
+  </script>
+</body>
