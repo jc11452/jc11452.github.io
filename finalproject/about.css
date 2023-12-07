@@ -123,10 +123,10 @@ img { /* image positioning */
     display: none;
   }
   .container {
-    top: 57%;
+    top: 47%;
     left: 50%;
-    width: 80%;
-    height: 70%;
+    width: 83%;
+    height: 65%;
   }
   h1 {
     white-space: nowrap;
