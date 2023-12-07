@@ -76,10 +76,15 @@
 <!-- card swipe javascript -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
-    var swiper = new Swiper(".swiper",{
-      effect:"cards",
-      grabCursor:true,
-    })
+    function initializeSwiper() {
+      var swiper = new Swiper(".swiper", {
+        effect: "cards",
+        grabCursor: true,
+      });
+    }
+    if (window.innerWidth < 600) {
+      initializeSwiper();
+    }
   </script>
 
 <!-- hover == text -->
