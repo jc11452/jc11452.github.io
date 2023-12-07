@@ -189,31 +189,20 @@ h1 { /* big title: jiho choi */
 /*  */
 /*  */  /* phone layout */
 @media screen and (max-width: 600px) {
-  h1, .cards, .cards img, .crystal{
+  h1, .cards, .cards img, .crystal{ /* homepage */
     transform: scale(0.7);
   }
   .cards {
-    top: 45%;
-    left: 48%;
+    top: 43%;
+    left: 46%;
   }
   .crystal {
-    top: 28%;
-    left: 22%;
+    top: 30%;
+    left: 17%;
   }
   h1 {
     top: 40%;
     left: 36%;
   }
-
-
-
-
-/*  */
-/* aboutpage */
-
-/*  */
-/* website projects */
-
-
 }
 /*  */

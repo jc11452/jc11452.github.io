@@ -146,3 +146,13 @@ body{
   pointer-events: none;
   z-index: 999;
 }
+
+/*  */
+/*  */  /* phone layout */
+@media screen and (max-width: 600px) {
+    .swiper { /* website projects */
+      transform: scale(0.75);
+    }
+
+}
+/*  */
