@@ -189,7 +189,10 @@ h1 { /* big title: jiho choi */
 /*  */
 /*  */  /* phone layout */
 @media screen and (max-width: 600px) {
-  h1 { /* frontpage */
+  * {
+    transform: scale(0.7);
+  }
+  /* h1 {
     font-size: 40px;
     top: 300px;
   }
@@ -203,7 +206,7 @@ h1 { /* big title: jiho choi */
   }
   .cards img {
     width: 100%;
-  }
+  } */
 /*  */
 /* aboutpage */
 
