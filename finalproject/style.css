@@ -197,15 +197,15 @@ h1 { /* big title: jiho choi */
   }
   .crystal {
     position: relative;
-    top: 3%;
+    top: -5%;
     left: 0%;
-    height: 37%;
+    height: 40%;
     z-index: 1;
   }
   h1 {
-    top: 39%;
-    left: 33%;
-    font-size: 55px;
+    top: 34%;
+    left: 32%;
+    font-size: 50px;
     z-index: 5;
     white-space: nowrap;
   }
