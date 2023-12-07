@@ -192,21 +192,13 @@ h1 { /* big title: jiho choi */
   h1, .cards, .cards img, .crystal{
     transform: scale(0.75);
   }
-  /* h1 {
-    font-size: 40px;
-    top: 300px;
-  }
-  .crystal {
-    height: 290px;
-  }
   .cards {
-    transform: scale(0.7);
-    top: 15%;
-    left: 20%;
+    left: 2px;
   }
-  .cards img {
-    width: 100%;
-  } */
+
+
+
+
 /*  */
 /* aboutpage */
 
