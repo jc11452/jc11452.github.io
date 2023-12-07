@@ -140,7 +140,7 @@ img { /* image positioning */
   }
   .big {
     position: relative;
-    left: -90%;
+    left: -85%;
     top: -90px;
     align-items: center;
   }
