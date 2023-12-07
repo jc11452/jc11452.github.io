@@ -140,7 +140,7 @@ img { /* image positioning */
   }
   .big {
     position: relative;
-    left: -82%;
+    left: -90%;
     top: -90px;
     align-items: center;
   }
@@ -150,7 +150,7 @@ img { /* image positioning */
   }
   .me {
     width: 65%;
-    top: 25%;
+    top: 23%;
     left: 33%;
     transform: translate(-50%, -50%);
     text-align: center;
