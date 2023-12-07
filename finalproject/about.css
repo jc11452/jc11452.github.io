@@ -65,7 +65,7 @@ img { /* image positioning */
   width: 245px;
   z-index: 999;
   position: absolute;
-  top: 142px;
+  top: 160px;
   left: 19%;
   transform: translateX(-50%);
 }
