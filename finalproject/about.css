@@ -125,7 +125,7 @@ img { /* image positioning */
   .container {
     align-items: center;
     width: 80%;
-    height: 70%;
+    height: 74%;
   }
   h1 {
     white-space: nowrap;
@@ -139,14 +139,14 @@ img { /* image positioning */
   }
   .big {
     position: relative;
-    left: -70%;
+    left: -74%;
     top: -90px;
   }
   p {
     transform: scale(0.9);
   }
   .me {
-    top: 31%; /* Adjust the top position as needed */
+    top: 28%; /* Adjust the top position as needed */
     left: 3%;
     transform: translate(-50%, -50%);
     text-align: center;
