@@ -42,7 +42,7 @@ span {
 }
 .big { /* (hey it's me jiho) positioning */
   position: relative;
-  margin-left: 310px;
+  margin-left: 320px;
   margin-top: 97px;
 }
 /*  */
@@ -51,7 +51,7 @@ span {
   z-index: 9999;
   position: relative;
   margin-top: 210px;
-  margin-left: 205px;
+  left: -1%;
 }
 p {
   font-family: "kopius", serif;
@@ -65,9 +65,9 @@ p {
 img { /* image positioning */
   width: 245px;
   z-index: 999;
-  position: absolute;
-  top: 160px;
-  left: 19%;
+  position: relative;
+  top: 49px;
+  left: 5%;
   transform: translateX(-50%);
 }
 /*  */
@@ -123,9 +123,10 @@ img { /* image positioning */
     display: none;
   }
   .container {
+    top: 53%;
     align-items: center;
     width: 80%;
-    height: 74%;
+    height: 70%;
   }
   h1 {
     white-space: nowrap;
@@ -141,12 +142,13 @@ img { /* image positioning */
     position: relative;
     left: -74%;
     top: -90px;
+    align-items: center;
   }
   p {
     transform: scale(0.9);
   }
   .me {
-    top: 28%; /* Adjust the top position as needed */
+    top: 28%;
     left: 3%;
     transform: translate(-50%, -50%);
     text-align: center;
