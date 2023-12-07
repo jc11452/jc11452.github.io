@@ -189,10 +189,8 @@ h1 { /* big title: jiho choi */
 
 /*  */ /* adjusting css for phone screens */
 @media screen and (max-width: 600px) {
-  .center_container {
-    width: 60%;
-    position: absolute;
-    transform: translate(50%, 50%) translate(-50%, -50%);
+  .cards, .crystal, h1 {
+    transform: scale(0.5);
   }
 
 }
