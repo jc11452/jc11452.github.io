@@ -190,11 +190,19 @@ h1 { /* big title: jiho choi */
 /*  */  /* phone layout */
 @media screen and (max-width: 600px) {
   h1, .cards, .cards img, .crystal{
-    transform: scale(0.75);
+    transform: scale(0.7);
   }
   .cards {
-    margin-left: -15px;
-    margin-top: -40px;
+    top: 45%;
+    left: 48%;
+  }
+  .crystal {
+    top: 28%;
+    left: 19%;
+  }
+  h1 {
+    top: 40%;
+    left: 34%;
   }
 
 
