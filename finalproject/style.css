@@ -202,11 +202,11 @@ h1 { /* big title: jiho choi */
     height: 130px;
   }
   .cards {
-    top: 35%;
+    top: 30%;
     width: 90%;
   }
   .cards img {
-    width: 95%;
+    width: 100%;
   }
 }
 /*  */
