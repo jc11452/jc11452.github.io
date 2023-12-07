@@ -188,10 +188,10 @@ h1 { /* big title: jiho choi */
 }
 
 /*  */ /* adjusting css for phone screens */
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .cards, .crystal, h1 {
     transform: scale(0.5);
-  }
+  } */
 
 }
 /*  */
