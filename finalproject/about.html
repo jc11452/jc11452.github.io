@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en-us" dir="ltr">
+
+<!--document head - web metadata-->
+  <head>
+    <meta charset="utf-8">
+    <title>About Me</title>
+    <link rel="stylesheet" href="about.css"> <!--cssfile-->
+    <link rel="stylesheet" href="https://use.typekit.net/mix7vbv.css">
+    <script src="shine.js-master/dist/shine.min.js"></script>
+    <!-- morphing layout to fit diff-sized screens -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+
+<body>
+  <div class="container">
+    <h1 class="text-hover">
+      <div class="big">
+        <span onmouseenter="changeColor(this)" class="letters">h</span> <!--hey-->
+        <span onmouseenter="changeColor(this)" class="letters">e</span>
+        <span onmouseenter="changeColor(this)" class="space letters">y</span>
+        <span onmouseenter="changeColor(this)" class="letters">i</span> <!--it's-->
+        <span onmouseenter="changeColor(this)" class="letters">t</span>
+        <span onmouseenter="changeColor(this)" class="letters">'</span>
+        <span onmouseenter="changeColor(this)" class="space letters">s</span>
+        <span onmouseenter="changeColor(this)" class="letters">m</span> <!--me-->
+        <span onmouseenter="changeColor(this)" class="space letters">e</span>
+        <span onmouseenter="changeColor(this)" class="letters">j</span> <!--jiho-->
+        <span onmouseenter="changeColor(this)" class="letters">i</span>
+        <span onmouseenter="changeColor(this)" class="letters">h</span>
+        <span onmouseenter="changeColor(this)" class="letters">o</span>
+      </div>
+    </h1>
+  </div>
+
+  <img src="images/about_hand.png">
+  <div class="me">
+    <p>I am a sophomore at New York University Abu Dhabi, majoring in Interactive Media with an intention to minor  in design. My technical prowess spans from foundational knowledge in HTML and CSS to a developing proficiency in JavaScript. I am deeply passionate about graphic motion animations, drawn to the transformative power of technology in bringing visual narratives to life. In addition, my fascination extends to illustrations and graphic design, where I strive to craft visually  compelling digital experiences. Looking forward, I envision a career path that integrates my skills and passions to create impactful, user-centric digital experiences, contributing meaningfully to the ever-evolving landscape of interactive media.</p>
+  </div>
+
+  <a href="https://jc11452.github.io/finalproject/index.html" class="button_container">
+    <div class="butt_sec"></div>
+    <div class="butt_sec"></div>
+    <div class="butt_sec"></div>
+    <div class="butt_sec"></div>
+    <div class="button_text">homepage</div>
+  </a>
+
+
+<!-- javascript -->
+<!-- changing text colour upon hover -->
+<style>
+  .transition_out {
+    transition: color 1.5s ease;
+  }
+</style>
+<script>
+  var colors = ['#f60046', '#337fc0', '#f5719b', '#30c4cb'];
+  var originalColor = '#322746';
+  var colorIndex = 0;
+
+  function changeColor(element, isHover) {
+    clearTimeout(element.timeout);
+
+    element.style.color = colors[colorIndex];
+    colorIndex = (colorIndex + 1) % colors.length;
+
+    clearTimeout(element.timeout);
+
+    element.timeout = setTimeout(function () {
+      if (!isHover) {
+        element.style.color = originalColor;
+
+        element.classList.add('transition_out');
+
+        element.addEventListener('transitionend', function onTransitionEnd() {
+          element.classList.remove('transition_out');
+          element.removeEventListener('transitionend', onTransitionEnd);
+        });
+      }
+    }, 2000);
+  }
+</script>
+</body>

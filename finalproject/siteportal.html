@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en-us" dir="ltr">
+
+<!--document head - web metadata-->
+  <head>
+    <meta charset="utf-8">
+    <title>Website Portfolio</title>
+    <link rel="stylesheet" href="siteportalstyle.css"> <!--cssfile-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/mix7vbv.css"> <!--adobe fonts-->
+    <!-- morphing layout to fit diff-sized screens -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+<body>
+<!-- loading screen -->
+  <div class="loading_screen">
+    <div class="circle" id="circle1" style="left: 210px; top: 150px;"></div>
+    <div class="circle" id="circle2" style="left: 420px; top: 270px;"></div>
+    <div class="circle" id="circle3" style="left: 1000px; top: 350px;"></div>
+    <div class="circle" id="circle4" style="left: 980px; top: 500px;"></div>
+    <div class="circle" id="circle5" style="left: 600px; top: 950px;"></div>
+  </div>
+
+  <div class="content">
+<!-- swiping/ flipover cards -->
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"> <!-- first card -->
+          <div class="back"> </div>
+          <div class="front"> <a href="https://jc11452.github.io/index.html"><img class="bg1" src="images/front1.png"></a>
+          </div>
+        </div>
+
+        <div class="swiper-slide"> <!-- second card -->
+          <div class="back"> </div>
+          <div class="front"> <a href="https://fangfausto.github.io/webcomic-commlab/"><img class="bg2" src="images/front2.png"></a>
+          </div>
+        </div>
+
+        <div class="swiper-slide"> <!-- third card -->
+          <div class="back"> </div>
+          <div class="front"> <a href="https://fhgggtyf.github.io/SoundProject/src/index.html"><img class="bg3" src="images/front3.png"></a>
+          </div>
+        </div>
+
+        <div class="swiper-slide"> <!-- fourth card -->
+          <div class="back"> </div>
+          <div class="front"> <a href="https://izahsohail.github.io/feverdream/"><img class="bg4" src="images/front4.png"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- homepage button -->
+    <a href="https://jc11452.github.io/finalproject/index.html" class="button_container">
+      <div class="butt_sec"></div>
+      <div class="butt_sec"></div>
+      <div class="butt_sec"></div>
+      <div class="butt_sec"></div>
+      <div class="button_text">homepage</div>
+    </a>
+
+<!-- javascript section -->
+<!-- loading page javascript -->
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const loadingScreen = document.querySelector(".loading_screen");
+
+    setTimeout(() => {
+      loadingScreen.style.display = "none";
+    }, 3000); //time till content shows
+  });
+  </script>
+
+<!-- card swipe javascript -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".swiper",{
+      effect:"cards",
+      grabCursor:true,
+    })
+  </script>
+
+<!-- hover == text -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const loadingScreen = document.querySelector(".loading_screen");
+
+    setTimeout(() => {
+      loadingScreen.style.display = "none";
+
+      var mouseText = document.createElement("div");
+      mouseText.className = "popup-text"; // stating "text" class
+      mouseText.textContent = "Click the on the cards to view my projects"; //text being shown
+
+      document.body.appendChild(mouseText);
+      setTimeout(() => {
+        mouseText.style.display = "none";
+      }, 2500); //how long text stays on screen
+    }, 3000); // time till content shows
+  });
+</script>
+</body>
