@@ -119,17 +119,13 @@ img { /* image positioning */
 /*  */
 /*  */  /* phone layout */
 @media screen and (max-width: 600px) {
-  body {
-    overflow-y: scroll;
-  }
   img {
     display: none;
   }
   .container {
-    top: 47%;
-    left: 50%;
-    width: 83%;
-    height: 65%;
+    align-items: center;
+    width: 80%;
+    height: 70%;
   }
   h1 {
     white-space: nowrap;
@@ -143,7 +139,7 @@ img { /* image positioning */
   }
   .big {
     position: relative;
-    left: -77%;
+    left: -70%;
     top: -90px;
   }
   p {
@@ -151,7 +147,7 @@ img { /* image positioning */
   }
   .me {
     top: 31%; /* Adjust the top position as needed */
-    left: 2%;
+    left: 3%;
     transform: translate(-50%, -50%);
     text-align: center;
   }
