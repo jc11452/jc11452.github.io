@@ -194,12 +194,14 @@ h1 { /* big title: jiho choi */
   }
 
   .crystal {
-    height: 200px; /* Adjust the height as needed for smaller screens */
+    height: 310px;
   }
 
   .cards {
-    height: 100px; /* Adjust the height as needed for smaller screens */
-    width: 60px;  /* Adjust the width as needed for smaller screens */
+    transform: scale(0.7);
+  }
+  .cards img {
+    width: 100%;
   }
 }
 /*  */
