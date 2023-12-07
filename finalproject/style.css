@@ -190,15 +190,16 @@ h1 { /* big title: jiho choi */
 /*  */  /* phone layout */
 @media screen and (max-width: 600px) {
   h1 {
-    font-size: 40px; /* Adjust the font size as needed for smaller screens */
+    font-size: 40px;
+    top: 300px;
   }
-
   .crystal {
-    height: 310px;
+    height: 290px;
   }
-
   .cards {
     transform: scale(0.7);
+    top: 285px;
+    left: 207px;
   }
   .cards img {
     width: 100%;
