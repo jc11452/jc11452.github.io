@@ -193,7 +193,8 @@ h1 { /* big title: jiho choi */
     transform: scale(0.75);
   }
   .cards {
-    left: -10px;
+    margin-left: -15px;
+    margin-top: -40px;
   }
 
 
