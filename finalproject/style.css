@@ -189,6 +189,24 @@ h1 { /* big title: jiho choi */
 
 /*  */ /* adjusting css for phone screens */
 @media screen and (max-width: 600px) {
+h1 {
+  font-size: 40px;
+}
+
+.crystal {
+  height: 150px;
+}
+
+.cards {
+  top: 40%;
+  height: 120px;
+  width: 60%;
+}
+
+.cards img {
+  width: 80%;
+}
+  }
 
 }
 /*  */
